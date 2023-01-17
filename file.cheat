@@ -1,0 +1,51 @@
+% file
+
+# 统计当前目录下文件的个数（包括子目录）
+ls -lR| grep "^-" | wc -l
+
+# 查看子目录占用
+du -lh -d 1
+
+# 查看文件是否存在
+[ -f <文件路径> ] && echo yes || echo no
+
+% file, find
+
+# 以纯文本形式打印当前路径下所有文件夹名称
+find . -maxdepth 1 -type d | sed 's/^.\///' | sed 's/^\.//'
+
+
+% file, delete
+
+# 删除当前目录下除子目录外的所有类型的文件
+find . -maxdepth 1 -type f -delete
+
+# 删除当前目录下所有一级文件夹(find)
+find . -maxdepth 1 -type d -exec rm -fr "{}" \;
+
+
+% file, tar
+
+# 打包并压缩文件夹
+tar -zcvf <压缩包名称>.tar.gz <目标文件夹路径>
+
+# 解压缩文件到文件夹
+tar -zxvf <tar.gz文件> <目标文件夹>
+
+# mount.cifs 挂载
+mount -t cifs -o rw,uid=1000,gid=1000,username=<username>,password=<password> <CIFS地址> <挂载目录>
+
+
+% file, mount
+
+# WebDAV 挂载
+mount -t davfs <WebDAV地址> <挂载目录>
+
+# 取消挂载
+fusermount -qzu <挂载路径>
+
+
+% file, mount, rclone
+
+# 添加rclone挂载
+rclone mount <云盘名称:目录> <挂载路径> --allow-other --allow-non-empty --vfs-cache-mode writes --daemon

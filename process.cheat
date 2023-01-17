@@ -1,0 +1,16 @@
+% process, ps, kill
+
+# 根据进程名杀进程
+ps -ef | grep <进程名> | awk '{print $2}' | xargs kill
+
+
+% process, ps
+
+# 根据进程名查看进程id
+ps -ef | grep <进程名>
+
+
+% process, kill
+
+# 根据进程id杀进程
+kill -9 <进程id>

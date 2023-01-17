@@ -1,0 +1,17 @@
+% ip
+
+# 查看本机内网ip
+ifconfig \
+  | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' \
+  | grep -Eo '([0-9]*\.){3}[0-9]*' \
+  | grep -v '127.0.0.1' \
+  | tail -n1
+
+# 查看本机公网ip
+dig +short myip.opendns.com @resolver1.opendns.com
+
+# 查看本机公网ip，并显示运营商
+curl cip.cc
+
+# 添加浮动ip
+sudo ip addr add <ip> dev eth0
