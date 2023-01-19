@@ -2,3 +2,12 @@
 
 # v2ray-agent (vasma) 八合一共存脚本+伪装站点
 wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+
+
+% script, gotop
+
+# 安装 gotop - 图形化活动监视器
+git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop \
+	&& /tmp/gotop/scripts/download.sh \
+	&& mv gotop /usr/local/bin \
+	&& chmod +x /usr/local/bin/gotop

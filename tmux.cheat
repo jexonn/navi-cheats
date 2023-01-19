@@ -1,0 +1,4 @@
+% tmux
+
+# 终止tmux服务，删除所有session
+tmux kill-server
