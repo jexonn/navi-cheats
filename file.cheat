@@ -49,3 +49,9 @@ fusermount -qzu <挂载路径>
 
 # 添加rclone挂载
 rclone mount <云盘名称:目录> <挂载路径> --allow-other --allow-non-empty --vfs-cache-mode writes --daemon
+
+
+% file, ln
+
+# 创建软链接
+ln -f <源文件或目录> <目标文件或目录>
