@@ -11,3 +11,9 @@ git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop \
 	&& /tmp/gotop/scripts/download.sh \
 	&& mv gotop /usr/local/bin \
 	&& chmod +x /usr/local/bin/gotop
+
+
+% script, sysinfo, speed
+
+# bench.sh - 查看系统信息，测试硬盘读写速率及网络带宽
+wget -qO- bench.sh | bash
