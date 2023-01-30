@@ -1,10 +1,10 @@
 % docker
 
 # 进入docker
-docker exec -it <实列id/名称> bash
+docker exec -it <实列id或名称> bash
 
 
 % docker, script
 
-# docker安装 filebrowser (arm64)
-docker run -d -v <本地目录>:/srv -v /root/filebrowser/filebrowserconfig.json:/etc/config.json -v /root/filebrowser/database.db:/etc/database.db --name filebrowser -p 8002:80 filebrowser/filebrowser:v2-arm64
+# docker安装 filebrowser
+docker run -d -v <本地目录>:/srv -v /root/filebrowser/filebrowserconfig.json:/etc/config.json -v /root/filebrowser/database.db:/etc/database.db --name filebrowser -p 8002:80 filebrowser/filebrowser:latest && echo "初始管理员账户名与密码均为admin" 
