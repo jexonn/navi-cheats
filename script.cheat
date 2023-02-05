@@ -17,3 +17,9 @@ git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop \
 
 # bench.sh - 查看系统信息，测试硬盘读写速率及网络带宽
 wget -qO- bench.sh | bash
+
+
+% script, oracle, oalive
+
+# oalive.sh - 甲骨文服务器保活脚本
+curl -L https://raw.githubusercontent.com/spiritLHLS/Oracle-server-keep-alive-script/main/oalive.sh -o oalive.sh && chmod +x oalive.sh && bash oalive.sh
