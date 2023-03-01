@@ -4,6 +4,18 @@
 wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 
 
+% script, hy
+
+# Hysteria (hy) 一键脚本
+wget -N https://gitlab.com/rwkgyg/hysteria-yg/raw/main/hysteria.sh && bash hysteria.sh
+
+
+% script, na
+
+# naiveproxy (na) 一键脚本
+wget -N https://gitlab.com/rwkgyg/naiveproxy-yg/raw/main/naiveproxy.sh && bash naiveproxy.sh
+
+
 % script, gotop
 
 # 安装 gotop - 图形化活动监视器
