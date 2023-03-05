@@ -16,6 +16,12 @@ wget -N https://gitlab.com/rwkgyg/hysteria-yg/raw/main/hysteria.sh && bash hyste
 wget -N https://gitlab.com/rwkgyg/naiveproxy-yg/raw/main/naiveproxy.sh && bash naiveproxy.sh
 
 
+% script, warp
+
+# WARP多功能一键脚本
+wget -N --no-check-certificate https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh && bash CFwarp.sh
+
+
 % script, gotop
 
 # 安装 gotop - 图形化活动监视器
@@ -25,7 +31,7 @@ git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop \
 	&& chmod +x /usr/local/bin/gotop
 
 
-% script, sysinfo, speed
+% script, sysinfo, speed, test
 
 # bench.sh - 查看系统信息，测试硬盘读写速率及网络带宽
 wget -qO- bench.sh | bash
@@ -35,3 +41,9 @@ wget -qO- bench.sh | bash
 
 # oalive.sh - 甲骨文服务器保活脚本
 curl -L https://raw.githubusercontent.com/spiritLHLS/Oracle-server-keep-alive-script/main/oalive.sh -o oalive.sh && chmod +x oalive.sh && bash oalive.sh
+
+
+% script, chatgpt, ip,test
+
+# ChatGPT服务可用性检测
+bash <(curl -Ls https://cpp.li/openai)
