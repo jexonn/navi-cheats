@@ -9,10 +9,18 @@ du -lh -d 1
 # 查看文件是否存在
 [ -f <文件路径> ] && echo yes || echo no
 
+
 % file, find
 
 # 以纯文本形式打印当前路径下所有文件夹名称
 find . -maxdepth 1 -type d | sed 's/^.\///' | sed 's/^\.//'
+
+
+% file, du
+
+# 打印当前路径下所有文件占用并按大小倒序排序
+
+du -sh .[!.]* * | sort -hr
 
 
 % file, delete
