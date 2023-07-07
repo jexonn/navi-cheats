@@ -1,0 +1,4 @@
+% git, track
+
+# 迭代所有的远程分支，将所有的远程分支都复制到本地
+for remote_branch in `git branch -r | grep -v /HEAD`; do git checkout --track $remote_branch; done
