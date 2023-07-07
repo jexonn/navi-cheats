@@ -2,3 +2,9 @@
 
 # 迭代所有的远程分支，将所有的远程分支都复制到本地
 for remote_branch in `git branch -r | grep -v /HEAD`; do git checkout --track $remote_branch; done
+
+
+% git, push
+
+# 推送所有本地分支并创建对应的远程分支，且建立本地和远程分支的追踪关系
+git push --all --set-upstream
