@@ -1,4 +1,7 @@
 % ssh
 
+# 生成SSH私钥和公钥
+ssh-keygen -t rsa
+
 # 上传本地公钥到服务器
 ssh-copy-id -i <公钥文件路径> <用户>@<服务器ip>
