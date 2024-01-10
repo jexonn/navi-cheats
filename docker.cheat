@@ -4,6 +4,21 @@
 docker exec -it <实列id或名称> bash
 
 
+% docker, docker-compose
+
+# 启动所有编排容器服务
+docker-compose up -d
+
+# 查看正在运行中的容器
+docker-compose ps
+
+# 查看运行中的容器日志，继续持续输出日志，并显示时间戳
+docker-compose logs -f -t
+
+# 停止所有up命令启动的容器
+docker-compose down
+
+
 % docker, script
 
 # docker安装 filebrowser
