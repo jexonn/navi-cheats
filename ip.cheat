@@ -7,13 +7,13 @@ ifconfig \
   | grep -v '127.0.0.1' \
   | tail -n1
 
-# 查看本机公网ip
+# 查看本机公网ip (opendns.com)
 dig +short myip.opendns.com @resolver1.opendns.com
 
-# 查看本机公网ip
+# 查看本机公网ip (ifconfig.me)
 curl ifconfig.me
 
-# 查看本机公网ip，并显示运营商
+# 查看本机公网ip，并显示运营商 (cip.cc)
 curl cip.cc
 
 # 添加浮动ip
