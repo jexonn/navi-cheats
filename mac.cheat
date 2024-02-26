@@ -1,0 +1,4 @@
+% mac, handoff
+
+# 修复 mac 接力失效问题（执行后重启）
+sudo update_dyld_shared_cache
