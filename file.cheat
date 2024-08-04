@@ -31,6 +31,8 @@ find . -maxdepth 1 -type f -delete
 # 删除当前目录下所有一级文件夹(find)
 find . -maxdepth 1 -type d -exec rm -fr "{}" \;
 
+# 删除当前文件夹下某个字符串排序前的所有文件
+(str_limit="<字符串>"; ls | sort | awk -v str="$str_limit" '$1 < str' && read '?Press enter to delete files' && rm $(ls | sort | awk -v str="$str_limit" '$1 < str'))
 
 % file, tar
 
