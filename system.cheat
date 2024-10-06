@@ -9,5 +9,5 @@ lsmod | grep bbr
 # 查看文件系统所剩节点数
 sudo tune2fs -l /dev/sda2 |grep inodes
 
-#设置主机名称 hostname
+# 设置主机名称hostname
 sudo hostnamectl set-hostname <主机名称>

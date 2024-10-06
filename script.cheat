@@ -48,6 +48,7 @@ curl -L https://raw.githubusercontent.com/spiritLHLS/Oracle-server-keep-alive-sc
 # ChatGPT服务可用性检测
 bash <(curl -Ls https://cpp.li/openai)
 
+
 % script, rmate
 
 # 安装 rmate
