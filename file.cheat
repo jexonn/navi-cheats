@@ -58,7 +58,7 @@ fusermount -qzu <挂载路径>
 % file, mount, rclone
 
 # 添加rclone挂载
-rclone mount <云盘名称:目录> <挂载路径> --allow-other --allow-non-empty --vfs-cache-mode writes --daemon
+rclone mount <云盘名称_冒号_目录> <挂载路径> --allow-other --allow-non-empty --vfs-cache-mode writes --daemon
 
 
 % file, ln
