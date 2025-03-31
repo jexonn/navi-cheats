@@ -20,7 +20,7 @@ find . -maxdepth 1 -type d | sed 's/^.\///' | sed 's/^\.//'
 
 # 打印当前路径下所有文件占用并按大小倒序排序
 
-du -sh .[!.]* * | sort -hr
+du -h --max-depth=1 | sort -hr
 
 
 % file, delete
